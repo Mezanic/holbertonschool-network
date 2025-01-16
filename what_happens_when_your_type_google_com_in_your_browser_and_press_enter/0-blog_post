@@ -1,0 +1,33 @@
+What Happens When You Type https://www.google.com in Your Browser and Press Enter?
+
+Ever wondered what goes on behind the scenes when you enter a URL in your browser and hit Enter? This process involves a complex dance of technologies that work together seamlessly to deliver the webpage you requested. Let's break down the key steps involved:
+
+1. DNS Request
+When you type https://www.google.com into your browser, the first step is to resolve the domain name into an IP address. This is where the Domain Name System (DNS) comes in. Your browser sends a DNS query to a DNS server, which responds with the IP address of the web server hosting Google’s website.
+
+2. TCP/IP
+With the IP address in hand, your browser initiates a connection using the Transmission Control Protocol/Internet Protocol (TCP/IP) suite. This protocol ensures that your data is transmitted reliably over the internet. It involves a three-way handshake process to establish a secure connection between your device and the server.
+
+3. Firewall
+On its way to the web server, your request might pass through several firewalls. These security systems monitor and control incoming and outgoing network traffic to protect the server from malicious attacks.
+
+4. HTTPS/SSL
+Since you’re accessing a URL starting with https, an SSL/TLS handshake occurs to establish a secure, encrypted connection. This ensures that any data exchanged between your browser and the web server is encrypted and protected from eavesdropping.
+
+5. Load Balancer
+Once your request reaches Google's infrastructure, it encounters a load balancer. This device or software distributes incoming network traffic across multiple servers to ensure no single server becomes overwhelmed. This improves both the reliability and performance of the service.
+
+6. Web Server
+The web server receives your request and processes it. It handles static content (like HTML, CSS, and JavaScript files) and forwards the request to the appropriate application server if dynamic content is required.
+
+7. Application Server
+For dynamic requests (e.g., fetching personalized content), the web server forwards the request to an application server. This server runs the backend logic and processes the request, often interacting with other systems like databases or APIs.
+
+8. Database
+If the application server needs to retrieve or store data, it queries a database. The database server efficiently handles these queries and returns the requested data to the application server.
+
+9. Back to the Browser
+Finally, the application server sends the processed data back to the web server, which sends it back through the load balancer, over the internet, and through your browser's various layers (like SSL/TLS decryption). Your browser then renders the received content, displaying the Google homepage.
+
+Conclusion
+Each of these steps involves intricate technologies and protocols working in harmony to deliver a web page within milliseconds. Understanding this process not only deepens your appreciation of how the internet works but also prepares you for technical discussions in software engineering roles.
